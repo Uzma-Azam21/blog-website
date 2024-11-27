@@ -16,7 +16,7 @@ export default function About() {
           you stay ahead in your field.
         </p>
         <p className="text-lg text-indigo-700">
-          Whether you're a seasoned professional or just starting your journey,
+          Whether you&#39;re a seasoned professional or just starting your journey,
           we aim to provide valuable content that inspires, educates, and
           empowers you to achieve your goals.
         </p>
