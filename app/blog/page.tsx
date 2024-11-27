@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { BlogCard } from "@/components/BlogCard";
 
 const posts = [
@@ -40,26 +39,13 @@ const posts = [
   },
 ];
 
-export default function Home() {
+export default function Blog() {
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <section className="text-center mb-16 animate-fade-in">
-        <h1 className="text-5xl sm:text-6xl font-bold text-indigo-900 mb-4 animate-slide-up">
-          Welcome to Our Blog
-        </h1>
-        <p className="text-xl text-indigo-700 max-w-2xl mx-auto animate-slide-up">
-          Discover insightful articles, expert opinions, and the latest trends
-          in technology, design, business, and more.
-        </p>
-        <Link
-          href="/blog"
-          className="mt-8 inline-block px-8 py-4 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition-colors transform hover:scale-105 animate-slide-up shadow-lg text-lg font-semibold w-64"
-        >
-          Explore All Posts
-        </Link>
-      </section>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 animate-fade-in">
+      <h1 className="text-4xl font-bold text-indigo-900 mb-8 animate-slide-up">
+        Blog Posts
+      </h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {posts.map((post, index) => (
           <div
             key={post.slug}
